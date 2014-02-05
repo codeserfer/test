@@ -1,0 +1,28 @@
+#include <iostream>
+#include <string>
+#include <cstring>
+#include <vector>
+#include <stdarg.h>
+
+using namespace std;
+vector <string> m;
+void func(const char *str,...) {
+    va_list p;
+    va_start(p,str);
+    const char* it = va_arg(p,const char* );
+    cout << str<<endl;
+    m.push_back (str);
+    do {
+        cout << it<<endl;
+        m.push_back (it);
+        it = va_arg(p,const char* );
+    }
+    while (it!=NULL);
+    va_end(p);
+}
+
+int main() {
+    func("111","2222",NULL);
+    cout << "vector:\n";
+    for (int i=0; i<m.length(); ++i) cout << m[i]<<endl;
+}

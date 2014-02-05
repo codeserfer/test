@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1388667906 source:/mnt/windows-7/Users/codeserfer/Dropbox/Code_Blocks/test/main.cpp
+	<iostream>
+	<string>
+	<cstring>
+	<vector>
+	<stdarg.h>
+
+1391618675 source:/home/codeserfer/Code_Blocks/test/main.cpp
+	<string>
+	<iostream>
+
